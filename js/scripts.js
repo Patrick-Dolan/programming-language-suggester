@@ -5,6 +5,18 @@ function hideQuestions() {
   $("#question-4").hide();
   $("#question-5").hide();
 }
+function testVariables() {
+  console.log(question1Answer);
+  console.log(question2Answer);
+  console.log(question3Answer);
+  console.log(question4Answer);
+  console.log(question5Answer);
+}
+let question1Answer = "";
+let question2Answer = "";
+let question3Answer = "";
+let question4Answer = "";
+let question5Answer = "";
 $(document).ready(function() {
   // Quiz start
   $("#suggestor-start-card").submit(function(event) {
@@ -19,7 +31,7 @@ $(document).ready(function() {
   // Question 1 submit
   $("#question-1").submit(function(event) {
     event.preventDefault();
-    const question1Answer = $("input:radio[name=question-1-radios]:checked").val();
+    question1Answer = $("input:radio[name=question-1-radios]:checked").val();
     console.log(question1Answer);
     hideQuestions();
     $("#question-2").show();
@@ -27,7 +39,7 @@ $(document).ready(function() {
   // Question 2 submit
   $("#question-2").submit(function(event) {
     event.preventDefault();
-    const question2Answer = $("input:radio[name=question-2-radios]:checked").val();
+    question2Answer = $("input:radio[name=question-2-radios]:checked").val();
     console.log(question2Answer);
     hideQuestions();
     $("#question-3").show();
@@ -35,7 +47,7 @@ $(document).ready(function() {
   // Question 3 submit
   $("#question-3").submit(function(event) {
     event.preventDefault();
-    const question3Answer = $("input:radio[name=question-3-radios]:checked").val();
+    question3Answer = $("input:radio[name=question-3-radios]:checked").val();
     console.log(question3Answer);
     hideQuestions();
     $("#question-4").show();
@@ -43,7 +55,7 @@ $(document).ready(function() {
   // Question 4 submit
   $("#question-4").submit(function(event) {
     event.preventDefault();
-    const question4Answer = $("input:radio[name=question-4-radios]:checked").val();
+    question4Answer = $("input:radio[name=question-4-radios]:checked").val();
     console.log(question4Answer);
     hideQuestions();
     $("#question-5").show();
@@ -51,9 +63,13 @@ $(document).ready(function() {
   // Question 5 submit
   $("#question-5").submit(function(event) {
     event.preventDefault();
-    const question5Answer = $("input:radio[name=question-5-radios]:checked").val();
+    question5Answer = $("input:radio[name=question-5-radios]:checked").val();
     console.log(question5Answer);
     hideQuestions();
     $("#frontend-suggestion,#backend-suggestion,#app-development-suggestion").show();
+    $(".full-name").append(question1Answer);
+  });
+  $("p").click(function() {
+    testVariables();
   });
 });
