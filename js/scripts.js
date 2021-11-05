@@ -83,6 +83,10 @@ $(document).ready(function() {
       $("#error").show();
     }
   });
+  //Reload Page button
+  $(".refresh-page-button").click(function() {
+    location.reload(true);
+  });
   // $("p").click(function() {
   //   testVariables();
   // });
