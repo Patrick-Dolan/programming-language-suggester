@@ -21,7 +21,6 @@ let question2Answer = "";
 let question3Answer = "";
 let question4Answer = "";
 let question5Answer = "";
-
 $(document).ready(function() {
   // Quiz start
   $("#suggestor-start-card").submit(function(event) {
@@ -73,7 +72,16 @@ $(document).ready(function() {
     hideQuestions();
     //$("#frontend-suggestion,#backend-suggestion,#app-development-suggestion").show();
     console.log(quizTotal());
-    //if ()
+    let result = quizTotal();
+    if (result >= 1 && result <=5) {
+      $("#frontend-suggestion").show();
+    } else if (result >= 6 && result <= 10) {
+      $("#backend-suggestion").show();
+    } else if (result >= 11 && result <= 15) {
+      $("#app-development-suggestion").show();
+    } else {
+      $("#error").show();
+    }
   });
   // $("p").click(function() {
   //   testVariables();
