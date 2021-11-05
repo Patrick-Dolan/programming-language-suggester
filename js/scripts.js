@@ -60,11 +60,11 @@ $(document).ready(function() {
     hideQuestions();
     let result = quizTotal();
     if (result >= 1 && result <=5) {
-      $("#frontend-suggestion").show();
+      $("#javascript-suggestion").show();
     } else if (result >= 6 && result <= 10) {
-      $("#backend-suggestion").show();
+      $("#python-suggestion").show();
     } else if (result >= 11 && result <= 15) {
-      $("#app-development-suggestion").show();
+      $("#c-suggestion").show();
     } else {
       $("#error").show();
     }
