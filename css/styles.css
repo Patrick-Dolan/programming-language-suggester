@@ -5,6 +5,7 @@
 #question-5,
 #frontend-suggestion,
 #backend-suggestion,
-#app-development-suggestion {
+#app-development-suggestion,
+#error {
   display: none;
 }
