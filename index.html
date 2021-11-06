@@ -19,15 +19,17 @@
         <div id="suggestor-start-card">
           <h2>So you want to learn how to program but don't know where to start?</h2>
           <hr>
-          <p>No problem. We've prepared a short quiz that will help you to choose which programming language you should look into. Enter your name and hit submit to start the quiz.</p>
+          <p>No problem. I've prepared a short quiz that will help you to choose which programming language you should look into. Enter your name and hit submit to start the quiz.</p>
           <form id="quiz-start-form">
-            <div class="form-group">
-              <label for="firstName">First Name:</label>
-              <input id="firstName" class="form-control" type="text" required>
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name:</label>
-              <input id="lastName" class="form-control" type="text" required>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" class="form-control" type="text" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" class="form-control" type="text" required>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Take the Quiz!</button>
           </form>

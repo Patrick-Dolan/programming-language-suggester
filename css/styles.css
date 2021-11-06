@@ -9,3 +9,9 @@
 #error {
   display: none;
 }
+img {
+  float: right;
+}
+button {
+  margin-top: 2em;
+}
