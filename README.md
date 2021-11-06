@@ -6,7 +6,7 @@
 
 ## Github Pages
 
-[Programming Language Suggester Github Pages](https://github.com/Patrick-Dolan/programming-language-suggester)
+[Programming Language Suggester Github Pages](https://patrick-dolan.github.io/programming-language-suggester/)
 
 ## Technologies Used
 
